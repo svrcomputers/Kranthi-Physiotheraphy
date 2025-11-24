@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kranthi Physiotherapy Clinic — Hanamkonda</title>
+  <meta name="description" content="Kranthi Physiotherapy Clinic: Back pain, knee pain, sports injury & neuro rehab — Hanamkonda." />
+  <meta name="keywords" content="physiotherapy clinic hanamkonda, back pain treatment, physio warangal" />
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    :root{--teal:#0ea5a4}
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background:#f8fafc; color:#0f172a; }
+    /* small header top bar */
+    .topbar { background:var(--teal); color:white; font-weight:600; font-size:0.95rem; }
+    /* header glass */
+    header .nav-link { transition: color 0.18s ease; }
+    header .nav-link:hover { color: #02585a; }
+    /* mobile menu animation */
+    .mobile-menu { transition: max-height .28s ease; overflow: hidden; }
+    /* floating whatsapp */
+    .whatsapp-fab { box-shadow:0 10px 30px rgba(2,6,23,0.18); }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR: date/time + contact -->
+  <div class="topbar text-sm py-2">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+      <div>📞 <a id="top-phone" href="tel:9876543210" class="underline">9876543210</a></div>
+      <div id="current-datetime">🗓️ --</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white/70 backdrop-blur sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-3">
+        <!-- Replace logo.png with your logo file -->
+        <img src="logo.png" alt="Clinic Logo" class="h-10 w-10 object-contain" onerror="this.style.display='none'">
+        <div>
+          <div class="text-xl font-extrabold text-teal-600">Kranthi Physio Clinic</div>
+          <div class="text-xs text-gray-500">Hanamkonda, Warangal</div>
+        </div>
+      </div>
+
+      <!-- desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 font-medium">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#doctor">Doctor</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <!-- mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-toggle" aria-label="Open menu" class="px-3 py-2 rounded bg-teal-600 text-white">
+          Menu
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-white/90">
+      <div class="max-w-6xl mx-auto px-4 pb-4 flex flex-col gap-2">
+        <a class="py-2 border-b" href="#home">Home</a>
+        <a class="py-2 border-b" href="#about">About</a>
+        <a class="py-2 border-b" href="#doctor">Doctor</a>
+        <a class="py-2 border-b" href="#services">Services</a>
+        <a class="py-2 border-b" href="#gallery">Gallery</a>
+        <a class="py-2 border-b" href="#testimonials">Testimonials</a>
+        <a class="py-2 border-b" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="relative h-[78vh] bg-cover bg-center" 
+      style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1600&q=80')">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/55 to-black/40"></div>
+      <div class="max-w-6xl mx-auto relative z-10 flex flex-col justify-center items-center h-full px-4 text-center text-white">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4" data-aos="fade-up">Advanced Physiotherapy & Pain Relief</h1>
+        <p class="max-w-2xl text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="120">
+          Personalized rehabilitation for back pain, sports injuries, post-surgery recovery and neurological rehab.
+        </p>
+        <div class="flex gap-3">
+          <a href="#contact" class="px-6 py-3 rounded-full bg-teal-500 hover:bg-teal-600 font-semibold shadow" data-aos="zoom-in">Book Appointment</a>
+          <a id="hero-wa" href="https://wa.me/919876543210?text=Hello%20Kranthi%20Physio,%20I%20need%20an%20appointment" target="_blank" class="px-6 py-3 rounded-full bg-white text-black font-semibold shadow" data-aos="zoom-in" data-aos-delay="100">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (Hospital image placeholder) -->
+    <section id="about" class="py-16 bg-transparent">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">About Our Clinic</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <!-- hospital/building image (replace later with your own) -->
+          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80" alt="Clinic building" class="rounded-xl shadow-lg" data-aos="fade-right">
+
+          <div data-aos="fade-left">
+            <p class="text-gray-700 mb-4">
+              Kranthi Physiotherapy Clinic offers evidence-based physiotherapy treatments with modern equipment and personalised care plans. We specialise in orthopaedic, neurological and sports rehabilitation.
+            </p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+              <li>Certified physiotherapists & manual therapy</li>
+              <li>Customized rehabilitation plans</li>
+              <li>Modern equipment and outcome tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR -->
+    <section id="doctor" class="py-16 bg-white/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">Meet the Doctor</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <img src="https://images.unsplash.com/photo-1579154204601-01588f351e87?auto=format&fit=crop&w=900&q=80" alt="Doctor" class="rounded-xl shadow-lg" data-aos="zoom-in">
+          <div data-aos="fade-left">
+            <h3 class="text-2xl font-bold text-teal-600 mb-2">Dr. Kranthi Kumar (PT)</h3>
+            <p class="text-gray-700 mb-3">Senior Physiotherapist with 10+ years experience in orthopaedics, neurorehab and sports medicine.</p>
+            <p class="text-gray-700">Expertise: Manual therapy, gait re-education, post-op rehab & evidence-based exercise programs.</p>
+            <div class="mt-4">
+              <a href="#contact" class="inline-block bg-teal-600 text-white px-4 py-2 rounded">Book via WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Service card -->
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1604709177225-055f994e9f7a?auto=format&fit=crop&w=900&q=80" alt="Back pain therapy" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Back & Neck Pain</h3>
+            <p class="text-sm text-gray-600">Manual therapy, mobilization, exercise & education for chronic pain relief.</p>
+          </article>
+
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up" data-aos-delay="80">
+            <img src="https://images.unsplash.com/photo-1560264418-c4445382edbc?auto=format&fit=crop&w=900&q=80" alt="Knee & joint therapy" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Knee & Joint Rehab</h3>
+            <p class="text-sm text-gray-600">Strengthening & mobility programs for knees, hips & shoulders.</p>
+          </article>
+
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up" data-aos-delay="160">
+            <img src="https://images.unsplash.com/photo-1609840113600-47d0ee5e8a2d?auto=format&fit=crop&w=900&q=80" alt="Stroke rehab" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Paralysis & Stroke Rehab</h3>
+            <p class="text-sm text-gray-600">Neurological physiotherapy focused on functional recovery & gait training.</p>
+          </article>
+
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Sports injury" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Sports Injury Rehab</h3>
+            <p class="text-sm text-gray-600">Return-to-play programs, soft tissue therapy & conditioning.</p>
+          </article>
+
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up" data-aos-delay="80">
+            <img src="https://images.unsplash.com/photo-1606813907291-3f231d3d9687?auto=format&fit=crop&w=900&q=80" alt="Post-surgery rehab" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Post-surgery Rehab</h3>
+            <p class="text-sm text-gray-600">Guided recovery after orthopedic surgeries with safe progressive loading.</p>
+          </article>
+
+          <article class="bg-white rounded-xl shadow p-5" data-aos="fade-up" data-aos-delay="160">
+            <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f5c4?auto=format&fit=crop&w=900&q=80" alt="Strengthening" class="rounded-md mb-4 w-full h-44 object-cover">
+            <h3 class="font-semibold mb-2">Muscle Strengthening</h3>
+            <p class="text-sm text-gray-600">Age-appropriate strengthening & conditioning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (physio related) -->
+    <section id="gallery" class="py-16 bg-white/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">Clinic Gallery</h2>
+
+        <div class="grid md:grid-cols-3 gap-6" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1584467735871-bc179c8df9c5?auto=format&fit=crop&w=900&q=80" alt="physio 1" class="rounded-xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1604702433171-b3ec6f8e4866?auto=format&fit=crop&w=900&q=80" alt="physio 2" class="rounded-xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1609840113600-47d0ee5e8a2d?auto=format&fit=crop&w=900&q=80" alt="physio 3" class="rounded-xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1512069772997-871cc818ab09?auto=format&fit=crop&w=900&q=80" alt="physio 4" class="rounded-xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1599058918144-07f2be4d4f5b?auto=format&fit=crop&w=900&q=80" alt="physio 5" class="rounded-xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f5c4?auto=format&fit=crop&w=900&q=80" alt="physio 6" class="rounded-xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">What Patients Say</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <figure class="bg-white p-6 rounded-xl shadow" data-aos="fade-right">
+            <blockquote class="italic text-gray-700">"The physiotherapy here helped me recover faster. Highly recommended."</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ramesh" class="w-12 h-12 rounded-full">
+              <div><strong>Ramesh</strong><div class="text-xs text-gray-500">Hanamkonda</div></div>
+            </figcaption>
+          </figure>
+
+          <figure class="bg-white p-6 rounded-xl shadow" data-aos="fade-left">
+            <blockquote class="italic text-gray-700">"Professional team and great results for my knee rehab."</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Sravani" class="w-12 h-12 rounded-full">
+              <div><strong>Sravani</strong><div class="text-xs text-gray-500">Kazipet</div></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & APPOINTMENT -->
+    <section id="contact" class="py-16 bg-white/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-aos="fade-up">Contact & Appointment</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div data-aos="fade-right">
+            <h3 class="text-xl font-semibold mb-3">Clinic Details</h3>
+            <p class="text-gray-700">📍 Hanamkonda, Warangal</p>
+            <p class="text-gray-700">📞 <a href="tel:9876543210" class="text-teal-600">9876543210</a></p>
+            <p class="text-gray-700">✉ <a href="mailto:info@kranthiphysio.com" class="text-teal-600">info@kranthiphysio.com</a></p>
+
+            <div class="mt-6">
+              <!-- Google map embed (replace with your clinic embed) -->
+              <iframe class="w-full h-64 rounded-xl border-0 shadow-lg" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7313146110554!2d79.56844127454684!3d17.978426784337136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b052a00000000:0x0000000000000000!2sHanamkonda!5e0!3m2!1sen!2sin!4v1700000000000" 
+                allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Appointment form -> opens WhatsApp with prefilled message -->
+          <form id="appointment-form" class="bg-white p-6 rounded-xl shadow" data-aos="fade-left">
+            <h3 class="text-xl font-semibold mb-3">Book Appointment (via WhatsApp)</h3>
+
+            <label class="text-sm text-gray-600">Name</label>
+            <input id="ap-name" type="text" required class="w-full p-3 border rounded mb-3" placeholder="Your full name">
+
+            <label class="text-sm text-gray-600">Phone</label>
+            <input id="ap-phone" type="tel" required class="w-full p-3 border rounded mb-3" placeholder="Mobile number">
+
+            <label class="text-sm text-gray-600">Preferred Date</label>
+            <input id="ap-date" type="date" class="w-full p-3 border rounded mb-3">
+
+            <label class="text-sm text-gray-600">Preferred Time</label>
+            <input id="ap-time" type="time" class="w-full p-3 border rounded mb-3">
+
+            <label class="text-sm text-gray-600">Service / Problem</label>
+            <input id="ap-service" type="text" class="w-full p-3 border rounded mb-3" placeholder="eg. back pain, knee pain">
+
+            <label class="text-sm text-gray-600">Message (optional)</label>
+            <textarea id="ap-message" rows="3" class="w-full p-3 border rounded mb-3" placeholder="Additional details (optional)"></textarea>
+
+            <button type="submit" class="w-full bg-teal-600 text-white p-3 rounded font-semibold">Send via WhatsApp</button>
+            <p class="text-xs text-gray-500 mt-2">You will be redirected to WhatsApp to confirm the booking message.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="text-white font-bold mb-2">Kranthi Physiotherapy Clinic</h4>
+        <p>Hanamkonda, Warangal</p>
+        <p class="mt-2 text-gray-400">Best physiotherapy for pain relief & rehabilitation.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-2">Quick Links</h4>
+        <nav class="flex flex-col gap-2 text-gray-300">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#gallery" class="hover:text-white">Gallery</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-2">Follow Us</h4>
+        <div class="flex gap-3">
+          <!-- replace # with real social links -->
+          <a href="#" aria-label="Facebook" class="bg-blue-600 p-2 rounded-full text-white">f</a>
+          <a href="#" aria-label="Instagram" class="bg-pink-500 p-2 rounded-full text-white">ig</a>
+          <a href="#" aria-label="YouTube" class="bg-red-600 p-2 rounded-full text-white">yt</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-gray-500 mt-8">© 2025 Kranthi Physiotherapy Clinic. All rights reserved.</div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a id="floating-wa" href="https://wa.me/919876543210" target="_blank" class="whatsapp-fab fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full text-xl shadow-lg" aria-label="WhatsApp Chat">💬</a>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Init AOS
+    AOS.init({ duration: 900, once: true });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let mobileOpen = false;
+    mobileToggle && mobileToggle.addEventListener('click', () => {
+      mobileOpen = !mobileOpen;
+      if (mobileOpen) {
+        mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+      } else {
+        mobileMenu.style.maxHeight = '0px';
+      }
+    });
+    // ensure initial collapsed
+    mobileMenu.style.maxHeight = '0px';
+
+    // Update date & time at top bar (refresh every 30s)
+    function updateDateTime() {
+      const dtEl = document.getElementById('current-datetime');
+      const now = new Date();
+      // Format: Monday, Nov 24, 2025 — 15:28
+      const opts = { weekday:'long', month:'short', day:'numeric', year:'numeric' };
+      const dateStr = now.toLocaleDateString('en-GB', opts);
+      const timeStr = now.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
+      dtEl.innerText = `🗓️ ${dateStr} — ${timeStr}`;
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 30000);
+
+    // Appointment form -> open WhatsApp with pre-filled message
+    const appointmentForm = document.getElementById('appointment-form');
+    appointmentForm && appointmentForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('ap-name').value || '');
+      const phone = encodeURIComponent(document.getElementById('ap-phone').value || '');
+      const date = document.getElementById('ap-date').value || '';
+      const time = document.getElementById('ap-time').value || '';
+      const service = encodeURIComponent(document.getElementById('ap-service').value || '');
+      const message = encodeURIComponent(document.getElementById('ap-message').value || '');
+      const clinicNumber = '919876543210'; // change to your WhatsApp number with country code (no + or 00)
+      // Build message
+      let text = `Hello Kranthi Physio Clinic.%0A`;
+      if(name) text += `Name: ${name}%0A`;
+      if(phone) text += `Phone: ${phone}%0A`;
+      if(service) text += `Service/Problem: ${service}%0A`;
+      if(date) text += `Preferred Date: ${date}%0A`;
+      if(time) text += `Preferred Time: ${time}%0A`;
+      if(message) text += `Note: ${message}%0A`;
+      text += `%0APlease confirm available slots.`;
+      const waUrl = `https://wa.me/${clinicNumber}?text=${text}`;
+      // open whatsapp
+      window.open(waUrl, '_blank');
+    });
+
+    // Hero WhatsApp button: add clinic number automatically (overwrite if needed)
+    const heroWA = document.getElementById('hero-wa');
+    if (heroWA) {
+      heroWA.href = 'https://wa.me/919876543210?text=Hello%20Kranthi%20Physio%20Clinic,%20I%20need%20information%20about%20your%20services';
+    }
+    const floatingWA = document.getElementById('floating-wa');
+    if (floatingWA) {
+      floatingWA.href = 'https://wa.me/919876543210';
+    }
+
+    // Ensure anchor click closes mobile menu
+    document.querySelectorAll('#mobile-menu a').forEach(a=>{
+      a.addEventListener('click', ()=> {
+        mobileOpen = false;
+        mobileMenu.style.maxHeight = '0px';
+      });
+    });
+  </script>
+
+</body>
+</html>
